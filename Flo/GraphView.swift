@@ -8,14 +8,37 @@
 
 import UIKit
 
-class GraphView: UIView {
+@IBDesignable class GraphView: UIView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
+    //set start and end colors for gradient so changable in storyboard
+    @IBInspectable var startColor: UIColor = .red
+    @IBInspectable var endColor: UIColor = .green
+    
+    
     override func draw(_ rect: CGRect) {
-        // Drawing code
+        //tell CG drawing functions which context
+        let context = UIGraphicsGetCurrentContext()!
+        let colors = [startColor.cgColor, endColor.cgColor]
+        
+        //use RGB color space
+        let colorSpace = CGColorSpaceCreateDeviceRGB()
+        
+        //define color stops for when gradient change over
+        let colorLocations: [CGFloat] = [0.0, 1.0]
+        
+        //create gradient
+        let gradient = CGGradient(colorsSpace: colorSpace,
+                                  colors: colors as CFArray,
+                                  locations: colorLocations)!
+        
+        //draw gradient
+        let startPoint = CGPoint.zero
+        let endPoint = CGPoint(x: 0, y: bounds.height)
+        context.drawLinearGradient(gradient,
+                                   start: startPoint,
+                                   end: endPoint,
+                                   options: [])
     }
-    */
+    
 
 }
