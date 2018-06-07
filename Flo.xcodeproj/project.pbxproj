@@ -14,6 +14,7 @@
 		97A28FF420C70FB6007C25FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97A28FF220C70FB6007C25FC /* LaunchScreen.storyboard */; };
 		97A28FFC20C7107F007C25FC /* PushButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A28FFB20C7107F007C25FC /* PushButton.swift */; };
 		97A28FFE20C8613C007C25FC /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A28FFD20C8613C007C25FC /* CounterView.swift */; };
+		97A2900020C8B9B5007C25FC /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A28FFF20C8B9B5007C25FC /* GraphView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		97A28FF520C70FB6007C25FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97A28FFB20C7107F007C25FC /* PushButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushButton.swift; sourceTree = "<group>"; };
 		97A28FFD20C8613C007C25FC /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
+		97A28FFF20C8B9B5007C25FC /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				97A28FE920C70FB4007C25FC /* AppDelegate.swift */,
 				97A28FEB20C70FB4007C25FC /* ViewController.swift */,
 				97A28FED20C70FB4007C25FC /* Main.storyboard */,
+				97A28FFF20C8B9B5007C25FC /* GraphView.swift */,
 				97A28FF020C70FB6007C25FC /* Assets.xcassets */,
 				97A28FF220C70FB6007C25FC /* LaunchScreen.storyboard */,
 				97A28FF520C70FB6007C25FC /* Info.plist */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97A2900020C8B9B5007C25FC /* GraphView.swift in Sources */,
 				97A28FEC20C70FB4007C25FC /* ViewController.swift in Sources */,
 				97A28FEA20C70FB4007C25FC /* AppDelegate.swift in Sources */,
 				97A28FFC20C7107F007C25FC /* PushButton.swift in Sources */,
@@ -291,6 +295,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QDN7KM2J58;
 				INFOPLIST_FILE = Flo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +314,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QDN7KM2J58;
 				INFOPLIST_FILE = Flo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

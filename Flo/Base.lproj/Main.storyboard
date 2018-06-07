@@ -50,41 +50,66 @@
                                     <action selector="pushButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dh6-8W-oDu"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yv6-uz-hmX" customClass="CounterView" customModule="Flo" customModuleProvider="target">
-                                <rect key="frame" x="72" y="123.5" width="230" height="230"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pm6-AG-Jzx" userLabel="Container View">
+                                <rect key="frame" x="52" y="83.5" width="270" height="270"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ke4-df-u0I">
-                                        <rect key="frame" x="104.5" y="93" width="22" height="43"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yv6-uz-hmX" customClass="CounterView" customModule="Flo" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="20" width="230" height="230"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ke4-df-u0I">
+                                                <rect key="frame" x="104.5" y="93" width="22" height="43"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="230" id="bmx-pO-DS5"/>
+                                            <constraint firstAttribute="height" constant="230" id="gvb-WI-nEb"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="counter">
+                                                <integer key="value" value="0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="counterColor">
+                                                <color key="value" red="0.3411764705882353" green="0.85490196078431369" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="outlineColor">
+                                                <color key="value" red="0.13333333333333333" green="0.43137254901960786" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C3F-LY-JMO" customClass="GraphView" customModule="Flo" customModuleProvider="target">
+                                        <rect key="frame" x="-15" y="9.5" width="300" height="250"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="A5r-xi-wxT"/>
+                                            <constraint firstAttribute="height" constant="250" id="hGa-id-Nm9"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstItem="Ke4-df-u0I" firstAttribute="centerY" secondItem="yv6-uz-hmX" secondAttribute="centerY" id="Tld-lZ-DYF"/>
-                                    <constraint firstItem="Ke4-df-u0I" firstAttribute="centerX" secondItem="yv6-uz-hmX" secondAttribute="centerX" id="XcG-WF-tOQ"/>
-                                    <constraint firstAttribute="width" constant="230" id="bmx-pO-DS5"/>
-                                    <constraint firstAttribute="height" constant="230" id="gvb-WI-nEb"/>
+                                    <constraint firstItem="yv6-uz-hmX" firstAttribute="centerX" secondItem="pm6-AG-Jzx" secondAttribute="centerX" id="BIJ-KY-uDO"/>
+                                    <constraint firstAttribute="width" constant="270" id="NrF-s7-xLJ"/>
+                                    <constraint firstAttribute="height" constant="270" id="fBZ-YP-O5y"/>
+                                    <constraint firstItem="C3F-LY-JMO" firstAttribute="centerX" secondItem="pm6-AG-Jzx" secondAttribute="centerX" id="jCB-qG-213"/>
+                                    <constraint firstItem="C3F-LY-JMO" firstAttribute="centerY" secondItem="pm6-AG-Jzx" secondAttribute="centerY" id="mEF-Ac-KIS"/>
+                                    <constraint firstItem="yv6-uz-hmX" firstAttribute="centerY" secondItem="pm6-AG-Jzx" secondAttribute="centerY" id="oyP-mY-98N"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="counter">
-                                        <integer key="value" value="3"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="counterColor">
-                                        <color key="value" red="0.3411764705882353" green="0.85490196078431369" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="outlineColor">
-                                        <color key="value" red="0.13333333333333333" green="0.43137254901960786" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Huq-el-i0T" appends="YES" id="BD0-5v-LQ5"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="VUR-vh-pZJ" firstAttribute="top" secondItem="yv6-uz-hmX" secondAttribute="bottom" constant="40" id="3ef-Eb-hZO"/>
-                            <constraint firstItem="yv6-uz-hmX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="GjZ-eL-Yw9"/>
                             <constraint firstItem="L7Q-Sa-FLg" firstAttribute="top" secondItem="VUR-vh-pZJ" secondAttribute="bottom" constant="20" id="Sta-cS-qbf"/>
+                            <constraint firstItem="pm6-AG-Jzx" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="cdq-Bt-HRo"/>
+                            <constraint firstItem="VUR-vh-pZJ" firstAttribute="top" secondItem="pm6-AG-Jzx" secondAttribute="bottom" constant="40" id="khR-cx-S7F"/>
                             <constraint firstItem="L7Q-Sa-FLg" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="qXt-TW-HwI"/>
                             <constraint firstItem="VUR-vh-pZJ" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="100" id="sUu-JP-y4I"/>
                             <constraint firstItem="VUR-vh-pZJ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="y4B-dp-cxq"/>
@@ -92,11 +117,18 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="containerView" destination="pm6-AG-Jzx" id="i5Z-dB-6F6"/>
                         <outlet property="counterLabel" destination="Ke4-df-u0I" id="CDL-do-5Xr"/>
                         <outlet property="counterView" destination="yv6-uz-hmX" id="RLe-F9-ZiW"/>
+                        <outlet property="graphView" destination="C3F-LY-JMO" id="RWZ-yJ-E4d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Huq-el-i0T">
+                    <connections>
+                        <action selector="counterViewTap:" destination="BYZ-38-t0r" id="g0E-SW-INM"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-140" y="32.833583208395808"/>
         </scene>
