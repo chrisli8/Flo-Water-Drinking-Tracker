@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		974F03DE20CA479F00AFF2A4 /* MedalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974F03DD20CA479F00AFF2A4 /* MedalView.swift */; };
 		97A28FEA20C70FB4007C25FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A28FE920C70FB4007C25FC /* AppDelegate.swift */; };
 		97A28FEC20C70FB4007C25FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A28FEB20C70FB4007C25FC /* ViewController.swift */; };
 		97A28FEF20C70FB4007C25FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97A28FED20C70FB4007C25FC /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		974F03DD20CA479F00AFF2A4 /* MedalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedalView.swift; sourceTree = "<group>"; };
 		97A28FE620C70FB4007C25FC /* Flo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97A28FE920C70FB4007C25FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97A28FEB20C70FB4007C25FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				97A28FF220C70FB6007C25FC /* LaunchScreen.storyboard */,
 				97A28FF520C70FB6007C25FC /* Info.plist */,
 				97A28FFD20C8613C007C25FC /* CounterView.swift */,
+				974F03DD20CA479F00AFF2A4 /* MedalView.swift */,
 			);
 			path = Flo;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			files = (
 				97A2900220CA0581007C25FC /* BackgroundView.swift in Sources */,
 				97A2900020C8B9B5007C25FC /* GraphView.swift in Sources */,
+				974F03DE20CA479F00AFF2A4 /* MedalView.swift in Sources */,
 				97A28FEC20C70FB4007C25FC /* ViewController.swift in Sources */,
 				97A28FEA20C70FB4007C25FC /* AppDelegate.swift in Sources */,
 				97A28FFC20C7107F007C25FC /* PushButton.swift in Sources */,
