@@ -88,6 +88,39 @@ import UIKit
         outlinePath.lineWidth = Constants.lineWidth
         outlinePath.stroke()
         
+        //Counter View Markers
+        let context = UIGraphicsGetCurrentContext()!
+        
+        //save original state
+        context.saveGState()
+        outlineColor.setFill()
+        
+        let markerWidth: CGFloat = 5.0
+        let markerSize: CGFloat = 10.0
+        
+        //marker rectagle positioned at the top left
+        let markerPath = UIBezierPath(rect: CGRect(x: -markerWidth / 2, y: 0, width: markerWidth, height: markerSize))
+        
+        //move top left of context to the previous center position
+        context.translateBy(x: rect.width / 2, y: rect.height / 2)
+        
+        for i in 1...Constants.numberOfGlasses {
+            //save the centered context
+            context.saveGState()
+            //calculate the rotation angle
+            let angle = arcLengthPerGlass * CGFloat(i) + startAngle - .pi / 2
+            //rotate and translate
+            context.rotate(by: angle)
+            context.translateBy(x: 0, y: rect.height / 2 - markerSize)
+            
+            //fill the marker rectangle
+            markerPath.fill()
+            //restore the cented contex for the next rotation
+            context.restoreGState()
+        }
+        
+        //restore the original state in case of more painting
+        context.restoreGState()
     }
 
 }
